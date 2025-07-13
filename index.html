@@ -13,7 +13,8 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: var(--primary-color);
+      background: url('/home/leonardor/Desktop/LARPMetro/background.png') no-repeat center center fixed;
+      background-size: cover;
       color: var(--secondary-color);
     }
 
@@ -65,13 +66,15 @@
     }
 
     .card {
-      background-color: #f9f9f9;
+      background-color: #f9f9f9cc; /* slight transparency */
       border: 2px solid var(--secondary-color);
       border-radius: 10px;
       padding: 20px;
       width: 250px;
       text-align: center;
       transition: transform 0.3s;
+      text-decoration: none;
+      color: inherit;
     }
 
     .card:hover {
@@ -90,8 +93,9 @@
     footer {
       text-align: center;
       padding: 20px;
-      color: #777;
+      color: #f1f1f1;
       font-size: 0.9rem;
+      background-color: rgba(0, 0, 0, 0.5);
     }
 
     @media (max-width: 600px) {
@@ -123,13 +127,15 @@
 
   <div class="services">
     <div class="card">
-      <h2>Taxi Division</h2>
+      <h2>Taxi Services</h2>
       <p>Get roleplay transportation across the city with reliable, fast-response taxis.</p>
     </div>
-    <div class="card">
-      <h2>Bus Division</h2>
-      <p>Scheduled public transit routes, depots, and full passenger immersion.</p>
-    </div>
+
+    <a href="https://example.com/bus-routes" class="card" target="_blank">
+      <h2>Bus Services</h2>
+      <p>Scheduled public transit routes, depots, and full passenger immersion. All routes can be found by clicking this box.</p>
+    </a>
+
     <div class="card">
       <h2>Security Division</h2>
       <p>Private security units for public events, transportation safety, and VIP protection.</p>
