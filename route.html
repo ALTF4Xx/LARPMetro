@@ -8,12 +8,13 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
+      background: url('routeback.png') no-repeat center center fixed;
+      background-size: cover;
       color: #333;
     }
 
     header {
-      background-color: #004080;
+      background-color: rgba(0, 64, 128, 0.85);
       color: white;
       padding: 1rem;
       text-align: center;
@@ -28,9 +29,9 @@
     }
 
     .route-card {
-      background: white;
+      background: rgba(255, 255, 255, 0.95);
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
       max-width: 340px;
       width: 100%;
       overflow: hidden;
@@ -44,8 +45,8 @@
 
     .route-image {
       width: 100%;
-      height: object-fit;
-      object-fit: cover;
+      height: auto;
+      display: block;
     }
 
     .route-content {
@@ -56,22 +57,26 @@
       font-size: 1.2rem;
       font-weight: bold;
       margin-bottom: 0.5rem;
+      color: #004080;
     }
 
     .route-description {
       font-size: 0.95rem;
-      color: #555;
+      color: #444;
     }
 
     footer {
       text-align: center;
       padding: 1rem;
-      background: #eee;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
       margin-top: 2rem;
     }
   </style>
 </head>
 <body>
+
+
 
 <header>
   <h1>City Bus Routes</h1>
@@ -91,18 +96,28 @@
     </div>
   </div>
 
-
   <div class="route-card">
     <img src="Route 1R - SPRINGFIELD.png" alt="Route 1RMap" class="route-image" />
     <div class="route-content">
       <div class="route-title">Route 1R - Spring Field</div>
       <div class="route-description">
-        This route runs down the highway, connect Spring Field and River City. Does not cover as many building and stops as 1, but covers farther distance quickly.
+        This route runs down the highway, connecting Spring Field and River City. Does not cover as many buildings and stops as Route 1, but covers farther distance quickly.
       </div>
     </div>
   </div>
 
-  <!-- Add more routes here when ready -->
+  <div class="route-card">
+    <img src="Route 3 - DOWNTOWN.jpg" alt="Route 3DT" class="route-image" />
+    <div class="route-content">
+      <div class="route-title">Route 3 - Downtown</div>
+      <div class="route-description">
+       This route goes through the entirety of down town River city, circling around the DOPT Depo.
+      </div>
+    </div>
+  </div>
+
+
+
 
 </main>
 
