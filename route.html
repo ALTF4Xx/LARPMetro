@@ -1,12 +1,114 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>City Bus Routes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .route-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 340px;
+      width: 100%;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .route-card:hover {
+      transform: scale(1.02);
+    }
+
+    .route-image {
+      width: 100%;
+      height: object-fit;
+      object-fit: cover;
+    }
+
+    .route-content {
+      padding: 1rem;
+    }
+
+    .route-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .route-description {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>City Bus Routes</h1>
+  <p>Explore local bus services with maps and route info</p>
+</header>
+
+<main class="container">
+
+  <!-- Route info stuff starts here xd -->
+  <div class="route-card">
+    <img src="Route 1 - SPRINGFIELD.jpg" alt="Route 1SF" class="route-image" />
+    <div class="route-content">
+      <div class="route-title">Route 1 - Spring Field</div>
+      <div class="route-description">
+       This route goes through many busy areas in the Spring Field area.
+      </div>
+    </div>
+  </div>
+
+
+  <div class="route-card">
+    <img src="Route 1R - SPRINGFIELD.png" alt="Route 1RMap" class="route-image" />
+    <div class="route-content">
+      <div class="route-title">Route 1R - Spring Field</div>
+      <div class="route-description">
+        This route runs down the highway, connect Spring Field and River City. Does not cover as many building and stops as 1, but covers farther distance quickly.
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more routes here when ready -->
+
+</main>
+
+<footer>
+  &copy; 2025 LARP Department of Public Transportation. All rights reserved.
+</footer>
+
+</body>
 </html>
